@@ -1,0 +1,839 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#c2cdd3;	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: relative;
+	top: 20%;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 1rem 0;
+	background-color:#000000;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	
+    
+}
+
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#cccccc;
+	font-size: 12px;
+    margin-right: 40px;
+	
+}
+.toggle{
+	
+    
+    display: none;
+    flex-direction: column;
+    
+}
+.active a,
+.menu li a:hover{
+	background-color: #202122;
+    
+	color:rgb(38, 221, 228)!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+.nombre-sitio {
+    margin-top: 3rem;
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+    
+   
+
+}
+.nombre-sitio span {
+    color: #f7f7f7;
+    background-color: #000000;
+    border-start-end-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+
+}
+
+.contenedor-navegacion {
+    border-top: .1rem ;
+    
+}
+
+
+/*Parte de arriba */
+/* Parte responsiva de arriba*/
+
+/*Finparteresponsiva*/
+/*Categorias*/
+#back{
+    background-color: #c2cdd3;
+}
+.hero {
+    
+    background-image: url(./img/Aguitarra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30rem;
+}
+@media (min-width: 768px) { 
+    .hero {
+        height: 55rem;
+    }
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    background-color: #54c5c5;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+.btn:hover {
+    background-color: #181818;
+    cursor: pointer;
+    color:rgb(63, 232, 238);
+}
+@media (min-width: 768px) { 
+    .btn {
+        width: auto;
+    }
+}
+
+
+/** Utilidades */
+.text-center {
+    text-align: center;
+}
+
+@media (min-width: 768px) { 
+    .max-width-30 {
+        max-width: 30rem;
+    }
+}
+
+.categorias {
+    padding: 5rem 0;
+}
+.categoria {
+    margin-bottom: 2rem;
+}
+.categoria img {
+    width: 100%;
+}
+.categoria a {
+    text-align: center;
+    display:block ;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: #000000;
+    color: #dce2e6;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.categoria a:hover {
+    background-color: #202122;
+    color: #3fdcf8;
+    border-bottom-right-radius: 1rem;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+@media (min-width: 768px) { 
+    .listado-categorias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+}
+/*sobre nosostros*/
+.cont-weare{
+    
+    
+
+}
+/** Listado de Productos **/
+.contenido-principal {
+    padding-top: 5rem;
+}
+@media (min-width: 768px) { 
+    .listado-productos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+    .producto:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .producto:nth-child(1) img {
+        height: 43rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .producto:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .producto:nth-child(2) img,
+    .producto:nth-child(3) img {
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .producto:nth-child(3) {
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+    .producto:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .producto:nth-child(5) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .producto:nth-child(6) {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+}
+
+
+
+.producto {
+    background-color: #000000;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) { 
+    .producto {
+        margin-bottom: 0;
+    }
+}
+.producto:last-of-type {
+    margin-bottom: 0;
+}
+
+.texto-producto {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+.texto-producto h3 {
+    margin: 0;
+}
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+.texto-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+/*Globales*/
+/* Globales */
+h1, 
+h2, 
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 2rem 0;
+}
+h1 {
+    font-size: 3.8rem;
+}
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 5rem;
+    }
+}
+h2 {
+    font-size: 3.2rem;
+}
+@media (min-width: 768px) { 
+    h2 {
+        font-size: 4rem;
+    }
+}
+h3 {
+    font-size: 2.4rem;
+}
+@media (min-width: 768px) { 
+    h3 {
+        font-size: 3rem;
+    }
+}
+/** Footer **/
+.site-footer {
+    border-top: 1px solid #fcfcfc;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.site-footer h3 {
+    margin-bottom: .5rem;
+    text-align: center;
+    color: #2c3033;
+}
+@media (min-width: 768px) { 
+    .site-footer h3 {
+        text-align: left;
+    }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.grid-footer > div {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) { 
+    .grid-footer > div {
+        margin: 0;
+    }
+}
+
+
+.footer-menu a {
+    display: flex;
+    font-size: 20px;
+    color: #202020;
+    align-content: center;
+}
+@media (min-width: 768px){
+    .footer-menu a{
+        align-content: center;
+        
+    }
+}
+
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+/** Nosotros **/
+.cv-tiweare{
+    display: flexbox;
+    width: 350px;
+    background-color: #000000c0;
+    margin-left: 38%;
+    border-top-right-radius: 1rem;
+    
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.cv-tiweare h2{
+    
+    text-align: center;
+    color:#fcfcfc;
+
+}
+.sobre-nosotros{
+    width: 100%;
+    height: 400px;
+    background: #000000e8;
+    display:flexbox;
+}
+.nm{
+    padding-top:60px;
+    margin-left: 50%;
+    width: 500px;
+    height: 500px;
+}
+.nmb{
+    padding-top:60px;
+    margin-left: 32%;
+    width: 500px;
+    height: 500px;
+}
+.nombre-sitio p{
+    
+    font-size:20px;
+    color: rgb(15, 15, 15);
+    
+   
+    
+}
+.nm p{
+    
+    font-size:20px;
+    color: ivory;
+    
+   
+    
+}
+.nmb p{
+    
+    font-size:20px;
+    color: rgb(17, 17, 17);
+    
+   
+    
+}
+.sobre-nosotros img{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+}
+.sobre-blog img{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-left: 37%;
+}
+.date{
+    padding: 20px;
+    display: flex;
+    margin-left: 20%;
+}
+.date h3{
+    font-size: 12px;
+    margin-left: 10%;
+}
+.date span{
+    color: #005e9c;
+}
+@media(min-width:768px){
+   
+
+}
+
+/** Galeria **/
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+/* Modal/Formulario */
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.close{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+
+
+}
+.modal{
+    width: 80%;
+    height: 90%;
+    background-color: #000000d0;
+    overflow: hidden;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position:relative;
+    transition: transform 0.8s;
+    transform: translateY(0%);
+    border-radius: 10px;
+}
+.modal-close{
+    transform: translateY(-200%);
+
+
+}
+.modal > img{
+
+
+}
+/*Formulario*/
+#contact-btn{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	height: 200px;
+	background-color: #F4F7FF;
+	margin: 20px 0px;
+	box-sizing: border-box;
+	box-shadow:2px 0px 20px rgba(0,0,0,0.4); 
+}
+.c-b-heading{
+	font-size: 2rem;
+	color:#1E1E1E;
+	font-family: calibri;
+	margin: 10px;
+	padding: 5px;
+	letter-spacing: 4px;
+	border-bottom: 2px solid #1E1E1E;
+	
+}
+#contact-btn button{
+	color:#FFFFFF;
+	font-size: 1rem;
+	font-family: calibri;
+	width:150px;
+	height: 40px;
+	margin: 10px;
+	background: #1E1E1E;
+	border: none;
+	outline: none;
+	box-shadow: 2px 5px 6px rgb(0, 0, 0);
+}
+#contact-btn button:hover{
+	background-color: #63D9FF;
+	color:#000000;
+	transition: all ease 0.5s;
+	font-weight: bold;
+}
+#contact-form{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#contact-form form{
+	display: flex;
+	width: 80%;
+	height: 70vh;
+	background-color: #00000000;
+	
+	
+}
+
+.contact-left{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-right{
+	width: 60%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid rgba(255,255,255,0.08);
+}
+.contact-right button{
+	width: 100%;
+	height: 50px;
+	background-color: #63D9FF;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	margin: 0px;
+	color:#1B1B1B;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+.c-l-heading{
+	font-family: calibri;
+	color:#FFFFFF;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+	
+}
+.f-name,.f-email{
+	display: flex;
+	flex-direction: column;
+	font-family: calibri;
+	
+}
+.f-name font,.f-email font{
+	color:#BFBFBF;
+	font-size: 22px;
+}
+.f-name input,.f-email input{
+	height: 30px;
+	width:250px;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	border-bottom: 1px solid #929292;
+	color:#FFFFFF;
+	margin: 10px 0px;
+}
+.f-email input::placeholder,
+.f-name input::placeholder{
+	opacity: 0.5;
+	letter-spacing: 1px;
+}
+.f-email input:focus,
+.f-name input:focus{
+	border-bottom: 1px solid #63D9FF;
+	transition: all ease 0.5s;
+}.message font{
+	font-size: 18px;
+	color:#4E4E4E;
+	font-family: calibri;
+	
+}
+.message{
+	margin: 20px;
+}
+.contact-right textarea{
+	width: 100% !important;
+	height: 150px !important;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	box-sizing: border-box;
+	color:#EBEBEB;
+	font-size: 16px;
+}
+.contact-right textarea::placeholder{
+	color:#EBEBEB;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri;
+}
+.contact-right button:active{
+	transform: scale(1.04);
+	transition: all ease 0.1s;
+}
+/*messagecategoria*/
+.messcate font{
+	font-size: 18px;
+	color:#4E4E4E;
+	font-family: calibri;
+	
+}
+.messcate{
+	margin: 20px;
+}
+.messcate textarea{
+	width: 100% !important;
+	height: 150px !important;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	box-sizing: border-box;
+	color:#EBEBEB;
+	font-size: 16px;
+}
+.messcate textarea::placeholder{
+	color:#EBEBEB;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri;
+}
+/*finmesscate*/
+@media(max-width:1190px){
+	#main{
+		background-size: 1150px !important;
+		
+	}
+	.name{
+		left: 10%;
+		top: 50%;
+		transform: translate(-10%,-50%);
+	}
+	.about-model img{
+		height:400px;
+	}
+	#services{
+		height:auto;
+	}
+	.b-container{
+		flex-wrap: wrap;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+	.s-b-img img{
+		object-fit:cover;
+	}
+	#contact-form form{
+		width:95% !important;
+	}
+
+}
+/*Select/formulario*/
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: #0a0a0a;
+    background-image: none;
+
+}
+select::-ms-expand{
+    display: none;
+
+}
+.select{
+    position: relative;
+    margin-left: 4%;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background:#47abb3;
+    overflow: hidden;
+    border-radius: .25em;
+    
+
+
+}
+select{
+    flex: 1;
+    padding: 0 .5em;
+    color: #06c2cf;
+    cursor: pointer;
+    font-size: 1em;
+}
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: rgb(78, 78, 78);
+    cursor: pointer;
+    pointer-events: none;
+    transition: 1s all ease;
+}
+.select:hover::after{
+    color: #3fdbd3;
+}
+/*Formulario/checkbox*/
+.radio,.checkbox{
+    margin-left: 10%;
+}
+.formulario input[type="radio"],
+.formulario input[type="checkbox"]{
+    display: none;
+}
+.formulario .radio label,
+.formulario .checkbox label{
+    color: #06c2cf;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.formulario .radio label:hover,
+.formulario .checkbox label:hover{
+    background: rgb(90, 117, 115);
+
+
+
+}
+.formulario .radio label:before,
+.formulario .checkbox label:before
+{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #06c2cf;
+    border-radius: 50%;
+    position: absolute;
+    left:17px;
+    top:4px;
+
+}
+.formulario .checkbox label:before{
+    border-radius:3px;
+}
+.formulario input[type="radio"]:checked + label,
+.formulario input[type="checkbox"]:checked + label
+{
+    padding: 5px 15px;
+    background: #04316d;
+    border-radius: 2px;
+    color: #06c2cf;
+
+
+}
+.formulario input[type="radio"]:checked + label:before,
+.formulario input[type="checkbox"]:checked + label:before{
+    display: none;
+    
+}
