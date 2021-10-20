@@ -29,7 +29,14 @@
 	<li><a href="#tienda">Tienda</a></li>		
 	<li><a href="#blogde">Blog</a></li>	
     <li><a href="#back">Galeria</a></li>	
-    <li><a href="#" class="cta">Contacto</a></li>	
+    <li><a href="#" class="cta">Contacto</a></li>
+    <button class="ham" type="button">
+                  <span class="br-1"></span>
+                  <span class="br-2"></span>
+                  <span class="br-3"></span>
+        </button>
+        <script src="navburguer.js"></script>
+	</nav>	
 	</ul>
     
 	</nav>
